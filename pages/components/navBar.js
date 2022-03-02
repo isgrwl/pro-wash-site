@@ -1,13 +1,13 @@
 export default function NavBar() {
   return (
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">
+    <div className="container-fluid px-0 ms-auto">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container">
+          <a className="logo navbar-brand" href="#">
             PRO-WASH
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -15,29 +15,23 @@ export default function NavBar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
 
           {/* Nav buttons */}
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               {/* Home button */}
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">
                   Home
                 </a>
               </li>
-              {/* Home button */}
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  Examples
-                </a>
-              </li>
+
               {/* Services ---------------------------------------------------------------------*/}
-              <li class="nav-item dropdown">
+              <li className="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
+                  className="nav-link dropdown-toggle"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -45,48 +39,64 @@ export default function NavBar() {
                 >
                   Services
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a
+                      className="dropdown-item"
+                      href="services#surface-cleaning"
+                    >
+                      <b>
+                      About
+                      </b>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="dropdown-item"
+                      href="services#surface-cleaning"
+                    >
                       Surface Cleaning
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a className="dropdown-item" href="#">
                       Graffiti Removal
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
-                      Interlock Restoration
+                    <a className="dropdown-item" href="#">
+                      Polymeric Sand Reinstatement
                     </a>
                   </li>
-                  {/*<li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>*/}
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Interlock Cleaning
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Interlock Relaying
+                    </a>
+                  </li>
                 </ul>
               </li>
-              {/*--------------------------------------------------------------------------------------*/}
-              {/*
-              <li class="nav-item">
-                <a class="nav-link disabled">343-999-3418</a>
+              {/* Home button */}
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">
+                  Portflio
+                </a>
               </li>
-              */}
               {/* Contact Us */}
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">
                   Contact Us
                 </a>
               </li>
+
               {/* Request a Quote */}
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  Request a Quote
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">
+                  Get a Quote
                 </a>
               </li>
             </ul>
