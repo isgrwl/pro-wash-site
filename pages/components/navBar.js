@@ -1,6 +1,6 @@
 export default function NavBar() {
   return (
-    <div className="container-fluid px-0 ms-auto">
+    <div className="container-fluid px-0">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
           <a className="logo navbar-brand" href="#">
@@ -19,8 +19,8 @@ export default function NavBar() {
           </button>
 
           {/* Nav buttons */}
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul className="navbar-nav align-item">
               {/* Home button */}
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
@@ -45,9 +45,7 @@ export default function NavBar() {
                       className="dropdown-item"
                       href="services#surface-cleaning"
                     >
-                      <b>
-                      About
-                      </b>
+                      <b>About</b>
                     </a>
                   </li>
                   <li>
@@ -83,7 +81,7 @@ export default function NavBar() {
               {/* Home button */}
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
-                  Portflio
+                  Portfolio
                 </a>
               </li>
               {/* Contact Us */}

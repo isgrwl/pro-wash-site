@@ -58,22 +58,30 @@ header .overlay {
 
 .logo {
   font-family: "Barlow", sans-serif;
+  color: rgb(33, 142, 196);
 }
 
 nav a {
   font-family: "Open Sans", sans-serif;
+  font-weight: bold;
 }
 
 .subtitle {
   font-family: "Barlow", sans-serif;
-  color: #014987;
+  color: rgb(19, 86, 120);
   font-weight: normal;
 }
 
 h2 {
-  color: #014987;
+  color: rgb(33, 142, 196);
 }
 
-.bg-color {
-  background-color: red;
+.btn {
+  width: 200px;
+  color:white;
+  background-color:rgb(33, 142, 196);
+}
+.btn:hover {
+  color:white;
+  border:solid white 1px;
 }

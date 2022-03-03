@@ -1,6 +1,3 @@
-import SeeOurWorkButton from "./SeeOurWorkButton";
-import ContactUsButton from "./ContactUsButton";
-
 export default function Hero() {
   return (
     <div>
@@ -20,14 +17,21 @@ export default function Hero() {
         </video>
 
         <div className="container h-100">
-          <div className="row align-items-center d-flex h-100">
-            <div className="w-100 text-white ">
-              <h1 className="logo display-3">
-                PRO-WASH Ottawa Pressure Washing Solutions
+          <div className="row align-items-center h-100">
+            <div>
+              <h1 className="logo display-3 text-white">
+                PRO-WASH Ottawa <br />
+                Pressure Washing Solutions
               </h1>
-              <div className="row mt-5 gap-3 flex-wrap w-50">
-                <SeeOurWorkButton></SeeOurWorkButton>
-                <ContactUsButton></ContactUsButton>
+              <div className="row">
+                <div className="col-md-8">
+                  <button type="button" className="col btn m-1">
+                    Contact Us
+                  </button>{" "}
+                  <button type="button" className="col btn m-1">
+                    See our Work
+                  </button>
+                </div>
               </div>
             </div>
           </div>

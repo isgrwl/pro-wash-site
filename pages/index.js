@@ -27,32 +27,36 @@ export default function Home() {
       <section className="my-5">
         {/* About Us */}
         <div className="container">
-          <h1 className="subtitle">About Us</h1>
-          <p>
-            Pro-Wash Ottawa provides top-notch exterior surface cleaning
-            services. We use state of the art equipment and the highest quality
-            materials to leave our clients with the best possible results. We
-            love seeing a dirty outdoor space restored to a beautiful, clean and
-            usable space again. Find out how we can help create that space
-            again!
-          </p>
+          <div className="row col-8">
+            <h1 className="subtitle">About Us</h1>
+            <p>
+              Pro-Wash Ottawa provides top-notch exterior surface cleaning
+              services. We use state of the art equipment and the highest
+              quality materials to leave our clients with the best possible
+              results. We love seeing a dirty outdoor space restored to a
+              beautiful, clean and usable space again. Find out how we can help
+              create that space again!
+            </p>
+            <button type="button" className="col-2 btn m-1">
+              Contact Us
+            </button>
+          </div>
         </div>
 
         {/*Services*/}
         <div className="container">
-          <h1 className="subtitle">Services</h1>
-          <p>
-            We offer Pressure washing services such as surface cleaning and
-            graffiti removal, as well as interlock restoration services, such as
-            polymeric sand reinstatement, interlock relaying, and interlock
-            cleaning. To learn more, view our services page.
-          </p>
-        </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-1">IMGx2</div>
+          <div className="row col-8">
+            <h1 className="subtitle">Services</h1>
+            <p>
+              We offer Pressure washing services such as surface cleaning and
+              graffiti removal, as well as interlock restoration services, such
+              as polymeric sand reinstatement, interlock relaying, and interlock
+              cleaning. To learn more, view our services page.
+            </p>
           </div>
         </div>
+        <img src="/img1.jpg" className="img-fluid" alt="..." />
+        <img src="/img2.jpg" className="img-fluid" alt="..." />
 
         {/* Our Principles*/}
         <div className="container">
@@ -127,10 +131,10 @@ export default function Home() {
           <h2>Want to learn more?</h2>
           <div className="row">
             <div className="col-md-8">
-              <button type="button" className="col btn btn-warning">
+              <button type="button" className="col btn m-1">
                 Contact Us
-              </button>{" "}
-              <button type="button" className="col btn btn-warning">
+              </button>
+              <button type="button" className="col btn m-1">
                 See our Work
               </button>
             </div>
