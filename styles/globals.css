@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@800&family=Open+Sans:wght@300&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 html,
 body {
   padding: 0;
@@ -21,7 +24,7 @@ a {
 header {
   position: relative;
   background-color: black;
-  height: 95vh;
+  height: 100vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -70,18 +73,67 @@ nav a {
   font-family: "Barlow", sans-serif;
   color: rgb(19, 86, 120);
   font-weight: normal;
-}
-
-h2 {
-  color: rgb(33, 142, 196);
+  font-size: 50px;
 }
 
 .btn {
   width: 200px;
-  color:white;
-  background-color:rgb(33, 142, 196);
+  color: white;
+  background-color: rgb(33, 142, 196);
 }
 .btn:hover {
-  color:white;
-  border:solid white 1px;
+  color: white;
+  border: solid white 1px;
+}
+
+.card {
+  border: none;
+  background-color: rgb(47, 152, 245);
+  color: white;
+  margin: 10px;
+}
+
+svg {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  stroke: white;
+}
+
+.main-text {
+  font-size: 24px;
+}
+
+.barnav {
+  z-index: 10000;
+}
+
+li {
+  list-style-position: inside;
+}
+
+h2 {
+  color: rgb(40, 126, 201);
+  font-size: 40px;
+}
+
+.carousel-item {
+  font-size: 2em;
+}
+
+@media (max-width: 500px) {
+  .carousel-item {
+    font-size: 1.5em;
+  }
+}
+
+.testimonial {
+  height: 300px;
+}
+
+.service-section:before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin: -100px 0 0;
 }
