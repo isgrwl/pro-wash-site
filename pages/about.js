@@ -1,6 +1,6 @@
-import NavBar from "./components/NavBar";
+import NavBar from "../components/NavBar";
 import Head from "next/head";
-import Footer from "./components/Footer";
+import Footer from "../components/Footer";
 
 export default function Services() {
   return (
@@ -46,10 +46,10 @@ export default function Services() {
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-checkbox"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <polyline points="9 11 12 14 20 6" />
@@ -68,11 +68,11 @@ export default function Services() {
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-backhoe"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="#2c3e50"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <circle cx="4" cy="17" r="2" />
@@ -97,10 +97,10 @@ export default function Services() {
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-sun"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <circle cx="12" cy="12" r="4" />
@@ -119,10 +119,10 @@ export default function Services() {
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-recycle"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M12 17l-2 2l2 2m-2 -2h9a2 2 0 0 0 1.75 -2.75l-.55 -1" />

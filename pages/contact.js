@@ -1,6 +1,6 @@
-import NavBar from "./components/NavBar";
+import NavBar from "../components/NavBar";
 import Head from "next/head";
-import Footer from "./components/Footer";
+import Footer from "../components/Footer";
 
 export default function Services() {
   return (
@@ -37,60 +37,60 @@ export default function Services() {
           </div>
           <div className="col pt-5">
             <form className="my-5">
-              <div class="mb-3">
-                <label for="customerNameInput" class="form-label">
+              <div className="mb-3">
+                <label htmlFor="customerNameInput" className="form-label">
                   Name*
                 </label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="customerNameInput"
                 />
               </div>
-              <div class="mb-3">
-                <label for="customerEmailInput" class="form-label">
+              <div className="mb-3">
+                <label htmlFor="customerEmailInput" className="form-label">
                   Email Address*
                 </label>
                 <input
                   type="email"
-                  class="form-control"
+                  className="form-control"
                   id="customerEmailInput"
                   aria-describedby="emailHelp"
                 />
               </div>
-              <div class="mb-3">
-                <label for="customerPhoneInput" class="form-label">
+              <div className="mb-3">
+                <label htmlFor="customerPhoneInput" className="form-label">
                   Phone
                 </label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="customerPhoneInput"
                 />
               </div>
-              <div class="mb-3">
-                <label for="customerBestTimeInput" class="form-label">
+              <div className="mb-3">
+                <label htmlFor="customerBestTimeInput" className="form-label">
                   Best time to call
                 </label>
                 <input
                   type="datetime-local"
-                  class="form-control"
+                  className="form-control"
                   id="customerBestTimeInput"
                 />
               </div>
-              <div class="mb-3">
-                <label for="customerAddressInput" class="form-label">
+              <div className="mb-3">
+                <label htmlFor="customerAddressInput" className="form-label">
                   Address
                 </label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="customerAddressInput"
                 />
               </div>
-              <div class="form-group mb-3">
-                <label for="customerServiceInput">Desired Service</label>
-                <select class="form-control" id="customerServiceInput">
+              <div className="form-group mb-3">
+                <label htmlFor="customerServiceInput">Desired Service</label>
+                <select className="form-control" id="customerServiceInput">
                   <option>Surface Cleaning</option>
                   <option>Graffiti Removal</option>
                   <option>Interlock Cleaning</option>
@@ -98,28 +98,28 @@ export default function Services() {
                   <option>Polymeric Sand Reinstatement</option>
                 </select>
               </div>
-              <div class="form-group mb-3">
-                <label for="customerProjectDetailsInput">
+              <div className="form-group mb-3">
+                <label htmlFor="customerProjectDetailsInput">
                   Project Information
                 </label>
                 <textarea
-                  class="form-control"
+                  className="form-control"
                   id="customerProjectDetailsInput"
                   rows="3"
                 ></textarea>
               </div>
-              <div class="form-group mb-3">
-                <label for="customerServiceInput">
+              <div className="form-group mb-3">
+                <label htmlFor="customerServiceInput">
                   How did you hear about us?
                 </label>
-                <select class="form-control" id="customerServiceInput">
+                <select className="form-control" id="customerServiceInput">
                   <option>Social Media</option>
                   <option>Peer</option>
                   <option>Google</option>
                   <option>Other</option>
                 </select>
               </div>
-              <button type="submit" class="btn btn-primary">
+              <button type="submit" className="btn btn-primary">
                 Submit
               </button>
             </form>

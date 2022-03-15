@@ -1,6 +1,6 @@
-import NavBar from "./components/NavBar";
+import NavBar from "../components/NavBar";
 import Head from "next/head";
-import Footer from "./components/Footer";
+import Footer from "../components/Footer";
 
 export default function Services() {
   return (
@@ -77,7 +77,7 @@ export default function Services() {
         <section id="interlock-cleaning" className="service-section">
           <h1 className="subtitle">Interlock Cleaning</h1>
           <p className="main-text">
-            Have an interlock surface in need of cleaning? We'd love to help! We
+            Have an interlock surface in need of cleaning? We`&apos;`d love to help! We
             use the highest quality cleaning products and biodegradable
             chemicals available. Cleaning your interlock surface can leave it
             looking brand new again instantly boosting curb appeal. Interlock

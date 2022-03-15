@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
-import NavBar from "./components/NavBar";
-import styles from "../styles/Home.module.css";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+import Hero from "../components/Hero";
+import Link from "next/link";
 
 const inlineStyles = {
   p: "",
@@ -40,11 +40,13 @@ export default function Home() {
                   beautiful, clean and usable space again. Find out how we can
                   help create that space again!
                 </p>
-                <a href="contact">
-                  <button type="button" className="col-2 btn m-1">
-                    Contact Us
-                  </button>
-                </a>
+                <Link href="/contact">
+                  <a>
+                    <button type="button" id="c-btn" className="col-2 btn m-1">
+                      Contact Us
+                    </button>
+                  </a>
+                </Link>
               </div>
 
               {/*Services*/}
@@ -58,21 +60,35 @@ export default function Home() {
                     relaying, and interlock cleaning. To learn more, view our
                     services page.
                   </p>
-                  <a href="services">
-                    <button type="button" className="col-2 btn m-1">
-                      Learn More
-                    </button>
-                  </a>
+                  <Link href="/services">
+                    <a>
+                      <button
+                        type="button"
+                        id="c-btn"
+                        className="col-2 btn c-btn  m-1"
+                      >
+                        Learn More
+                      </button>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="col-lg-5 ms-auto h-50">
-              <img
+              <Image
                 src="/img1.jpg"
                 className="img-fluid mb-2 d-none d-lg-block"
                 alt="..."
+                width="1000"
+                height="700"
               />
-              <img src="/img2.jpg" className="img-fluid" alt="..." />
+              <Image
+                src="/img2.jpg"
+                className="img-fluid"
+                alt="..."
+                width="1000"
+                height="700"
+              />
             </div>
           </div>
         </div>
@@ -91,23 +107,24 @@ export default function Home() {
                 <div className="carousel-inner">
                   <div className="carousel-item active">
                     <p>
-                      "PRO-WASH does perfect work EVERY time. I am a contractor.
-                      I used to call other companies but for the last 6 years, I
-                      have only called Preptech. The team does GREAT work.”
+                      `&quot;`PRO-WASH does perfect work EVERY time. I am a
+                      contractor. I used to call other companies but for the
+                      last 6 years, I have only called Preptech. The team does
+                      GREAT work.`&quot;`
                     </p>
                     <h4>-P Joyce</h4>
                   </div>
                   <div className="carousel-item">
                     <p>
-                      “Preptech did fast work. The job was done well and the
-                      price was good. I am happy.”
+                      `&quot;`Preptech did fast work. The job was done well and
+                      the price was good. I am happy.`&quot;`
                     </p>
                     <h4>-Amanda Chen</h4>
                   </div>
                   <div className="carousel-item">
                     <p>
-                      “Arrived on the promised day and finished the work before
-                      the deadline, without disturbing our work.
+                      `&quot;`Arrived on the promised day and finished the work
+                      before the deadline, without disturbing our work.`&quot;`
                     </p>
                     <h4>-Marc Bonnett</h4>
                   </div>
@@ -144,16 +161,20 @@ export default function Home() {
           <h2>Want to learn more?</h2>
           <div className="row">
             <div className="col-md-8 my-3">
-              <a href="contact">
-                <button type="button" className="col btn m-1">
-                  Contact Us
-                </button>
-              </a>
-              <a href="portfolio">
-                <button type="button" className="col btn m-1">
-                  See our Work
-                </button>
-              </a>
+              <Link href="/contact">
+                <a>
+                  <button type="button" id="c-btn" className="col btn c-btn m-1">
+                    Contact Us
+                  </button>
+                </a>
+              </Link>
+              <Link href="/portfolio">
+                <a>
+                  <button type="button" id="c-btn" className="col btn c-btn m-1">
+                    See our Work
+                  </button>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
