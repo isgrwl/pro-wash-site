@@ -76,7 +76,7 @@ nav a {
   font-size: 50px;
 }
 
-#c-btn { 
+#c-btn {
   width: 200px;
   color: white;
   background-color: rgb(33, 142, 196);
@@ -86,7 +86,7 @@ nav a {
   border: solid white 1px;
 }
 
-.card {
+#c-card {
   border: none;
   background-color: rgb(47, 152, 245);
   color: white;

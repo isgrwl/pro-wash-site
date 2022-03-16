@@ -39,6 +39,7 @@ export default function Services() {
         {/**CARDS */}
         <div className="row col-sm-8 col-lg-12 gap-1 justify-content-center w-100 m-md-5">
           <div
+            id="c-card"
             className="card d-flex flex-column align-items-center text-center"
             style={{ width: "15em" }}
           >
@@ -61,6 +62,7 @@ export default function Services() {
             </div>
           </div>
           <div
+            id="c-card"
             className="card d-flex flex-column align-items-center text-center"
             style={{ width: "15em" }}
           >
@@ -84,12 +86,13 @@ export default function Services() {
               <path d="M21.12 9.88l-3.12 -4.88l-5 5" />
               <path d="M21.12 9.88a3 3 0 0 1 -2.12 5.12a3 3 0 0 1 -2.12 -.88l4.24 -4.24z" />
             </svg>
-            <div className="card-body">
+            <div id="c-card" className="card-body">
               <h5 className="card-title">Take Pride in our Work</h5>
               <p className="card-text"></p>
             </div>
           </div>
           <div
+            id="c-card"
             className="card d-flex flex-column align-items-center text-center"
             style={{ width: "15em" }}
           >
@@ -112,6 +115,7 @@ export default function Services() {
             </div>
           </div>
           <div
+            id="c-card"
             className="card d-flex flex-column align-items-center text-center"
             style={{ width: "15em" }}
           >
