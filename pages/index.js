@@ -107,24 +107,24 @@ export default function Home() {
                 <div className="carousel-inner">
                   <div className="carousel-item active">
                     <p>
-                      `&quot;`PRO-WASH does perfect work EVERY time. I am a
+                      &quot;PRO-WASH does perfect work EVERY time. I am a
                       contractor. I used to call other companies but for the
                       last 6 years, I have only called Preptech. The team does
-                      GREAT work.`&quot;`
+                      GREAT work.&quot;
                     </p>
                     <h4>-P Joyce</h4>
                   </div>
                   <div className="carousel-item">
                     <p>
-                      `&quot;`Preptech did fast work. The job was done well and
-                      the price was good. I am happy.`&quot;`
+                      &quot;Preptech did fast work. The job was done well and
+                      the price was good. I am happy.&quot;
                     </p>
                     <h4>-Amanda Chen</h4>
                   </div>
                   <div className="carousel-item">
                     <p>
-                      `&quot;`Arrived on the promised day and finished the work
-                      before the deadline, without disturbing our work.`&quot;`
+                      &quot;Arrived on the promised day and finished the work
+                      before the deadline, without disturbing our work.&quot;
                     </p>
                     <h4>-Marc Bonnett</h4>
                   </div>
