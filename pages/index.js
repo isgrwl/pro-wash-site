@@ -19,7 +19,7 @@ export default function Home() {
           name="description"
           content="PRO-WASH Ottawa pressure washing service"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <NavBar></NavBar>
       <Hero></Hero>

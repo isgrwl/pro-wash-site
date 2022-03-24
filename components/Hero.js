@@ -6,8 +6,8 @@ export default function Hero() {
       <header>
         <div className="overlay"></div>
 
-        <video playsInline={true} autoPlay={true} muted={true} loop={true}>
-          <source src="/vid.mp4" type="video/mp4" />
+        <video playsInline={true} autoPlay={true} muted={true} loop={true} poster="/poster.png">
+          <source src="/videos/prowash_banner.mp4" type="video/mp4" />
         </video>
 
         <div className="container h-100">
