@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 81 | local-ssl-proxy --key ./ssl/key.pem --cert ./ssl/cert/pro-wash_ca.crt --source 80 --target 81",
+    "start": "next start -p 3001 | local-ssl-proxy --key ./ssl/key.pem --cert ./ssl/cert/pro-wash_ca.crt --source 3000 --target 3001",
     "lint": "next lint"
   },
   "dependencies": {

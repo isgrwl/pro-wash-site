@@ -6,7 +6,7 @@ export default function Services() {
   return (
     <div>
       <Head>
-        <title>PRO-WASH | Home</title>
+        <title>PRO-WASH | Services</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
