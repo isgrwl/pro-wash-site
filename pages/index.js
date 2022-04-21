@@ -24,109 +24,104 @@ export default function Home() {
       <NavBar></NavBar>
       <Hero></Hero>
 
-      <section className="my-5">
-        <div className="container">
-          <div className="row">
-            <div className="d-flex flex-column col-12 col-lg-6 justify-content-evenly">
-              {/* About Us */}
-
-              <div>
-                <h1 className="subtitle">About Us</h1>
-                <p className="main-text">
-                  Pro-Wash Ottawa provides top-notch exterior surface cleaning
-                  services. We use state of the art equipment and the highest
-                  quality materials to leave our clients with the best possible
-                  results. We love seeing a dirty outdoor space restored to a
-                  beautiful, clean and usable space again. Find out how we can
-                  help create that space again!
-                </p>
-                <Link href="/contact">
-                  <a>
-                    <button type="button" id="c-btn" className="col-2 btn m-1">
-                      Contact Us
-                    </button>
-                  </a>
-                </Link>
-              </div>
-
-              {/*Services*/}
-              <div className="my-5">
-                <div>
-                  <h1 className="subtitle ">Services</h1>
-                  <p className="main-text">
-                    We offer Pressure washing services such as surface cleaning
-                    and graffiti removal, as well as interlock restoration
-                    services, such as polymeric sand reinstatement, interlock
-                    relaying, and interlock cleaning. To learn more, view our
-                    services page.
-                  </p>
-                  <Link href="/services">
-                    <a>
-                      <button
-                        type="button"
-                        id="c-btn"
-                        className="col-2 btn c-btn  m-1"
-                      >
-                        Learn More
-                      </button>
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-5 ms-auto h-50">
-              <Image
-                src="/img1.jpg"
-                className="img-fluid mb-2 d-none d-lg-block"
-                alt="..."
-                width="1000"
-                height="700"
-              />
-              <Image
-                src="/img2.jpg"
-                className="img-fluid"
-                alt="..."
-                width="1000"
-                height="700"
-              />
-            </div>
+      {/* About Us */}
+      <section className="my-md-0 overflow-hidden">
+        <div className="row">
+          <div className="col m-md-5 p-md-5 p-5">
+            <h1 className="subtitle">About Us</h1>
+            <p className="main-text">
+              Pro-Wash Ottawa provides top-notch exterior surface cleaning
+              services. We use state of the art equipment and the highest
+              quality materials to leave our clients with the best possible
+              results. We love seeing a dirty outdoor space restored to a
+              beautiful, clean and usable space again. Find out how we can help
+              create that space again!
+            </p>
+            <Link href="/contact">
+              <a>
+                <button type="button" id="c-btn" className="col-2 btn m-1">
+                  Contact Us
+                </button>
+              </a>
+            </Link>
+          </div>
+          <div className="col position-relative d-none d-md-inline">
+            <Image
+              src="/images/img (9).jpg"
+              layout="fill"
+              objectFit="cover"
+            ></Image>
           </div>
         </div>
+      </section>
 
-        {/**Testimonials */}
-        <div className="container mt-3">
-          <h1 className="subtitle">What Our Clients Say About Us</h1>
+      {/*Services*/}
+      <section className="light-blue-bg">
+        <div className="row w-100 my-md-0">
+          <div className="col position-relative d-none d-md-inline">
+            <Image
+              src="/images/img (5).jpg"
+              layout="fill"
+              objectFit="cover"
+            ></Image>
+          </div>
+          <div className="col m-md-5 p-md-5 p-5">
+            <h1 className="subtitle-light">Services</h1>
+            <p className="main-text">
+              We offer Pressure washing services such as surface cleaning and
+              graffiti removal, as well as interlock restoration services, such
+              as polymeric sand reinstatement, interlock relaying, and interlock
+              cleaning. To learn more, view our services page.
+            </p>
+            <Link href="/services">
+              <a>
+                <button
+                  type="button"
+                  id="c-btn"
+                  className="col-2 btn c-btn  m-1"
+                >
+                  Learn More
+                </button>
+              </a>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/**Testimonials */}
+      <section>
+        <div className="container my-5 testimonials-inner">
+          <h1 className="subtitle text-center">What do our Clients Think?</h1>
           <div className="row justify-content-center my-5 testimonial">
             <div className="col-md-8">
               <div
                 id="carouselExampleIndicators"
-                className="carousel slide text-center p-4"
+                className="carousel slide text-center pt-5"
                 data-bs-ride="carousel"
                 data-bs-interval="8000"
               >
-                <div className="carousel-inner">
+                <div className="carousel-inner h-100">
                   <div className="carousel-item active">
                     <p>
-                      &quot;PRO-WASH does perfect work EVERY time. I am a
-                      contractor. I used to call other companies but for the
-                      last 6 years, I have only called Preptech. The team does
-                      GREAT work.&quot;
+                      &quot;I used to call other companies but for the last few
+                      years, I have only called PRO-WASH. The team does great
+                      work.&quot;
                     </p>
-                    <h4>-P Joyce</h4>
+                    <h4>P. Joyce</h4>
                   </div>
                   <div className="carousel-item">
                     <p>
-                      &quot;Preptech did fast work. The job was done well and
+                      &quot;PRO-WASH did fast work. The job was done well and
                       the price was good. I am happy.&quot;
                     </p>
-                    <h4>-Amanda Chen</h4>
+                    <h4>A. Chen</h4>
                   </div>
                   <div className="carousel-item">
                     <p>
                       &quot;Arrived on the promised day and finished the work
                       before the deadline, without disturbing our work.&quot;
                     </p>
-                    <h4>-Marc Bonnett</h4>
+                    <h4>M. Bonnett</h4>
                   </div>
                 </div>
                 <button
@@ -157,29 +152,43 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container">
-          <h2>Want to learn more?</h2>
-          <div className="row">
-            <div className="col-md-8 my-3">
-              <Link href="/contact">
-                <a>
-                  <button type="button" id="c-btn" className="col btn c-btn m-1">
-                    Contact Us
-                  </button>
-                </a>
-              </Link>
-              <Link href="/portfolio">
-                <a>
-                  <button type="button" id="c-btn" className="col btn c-btn m-1">
-                    See our Work
-                  </button>
-                </a>
-              </Link>
+      </section>
+      {/*Want to learn more?*/}
+      <section className="learn-more-background">
+        <div className="d-flex flex-column h-100 justify-content-center">
+          <div className="container d-flex justify-content-center">
+            <div className="learn-more-inner">
+              <h1 className="subtitle-2 text-center">Want to learn more?</h1>
+              <div className="row justify-content-center text-center">
+                <div className="col-md-8 my-3">
+                  <Link href="/contact">
+                    <a>
+                      <button
+                        type="button"
+                        id="c-btn"
+                        className="col btn c-btn m-1"
+                      >
+                        Contact Us
+                      </button>
+                    </a>
+                  </Link>
+                  <Link href="/portfolio">
+                    <a>
+                      <button
+                        type="button"
+                        id="c-btn"
+                        className="col btn c-btn m-1"
+                      >
+                        See our Work
+                      </button>
+                    </a>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
       {/*<div className="video-container">
         <iframe src="https://www.youtube.com/embed/Yj2iELI6OeI? &autoplay=1&mute=1"></iframe>
       </div>*/}

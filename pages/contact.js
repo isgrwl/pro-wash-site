@@ -1,6 +1,7 @@
 import NavBar from "../components/NavBar";
 import Head from "next/head";
 import Footer from "../components/Footer";
+import Script from "next/script";
 
 export default function Services() {
   return (
@@ -12,11 +13,13 @@ export default function Services() {
           name="description"
           content="PRO-WASH Ottawa pressure washing service"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <NavBar></NavBar>
+      <Script src="/scripts/submitForm.js" />
       <div className="container pt-5">
         <div className="row">
+          {/**CONTACT DETAILS */}
           <div className="col pt-5">
             <div className="pt-5">
               <h2 className="logo">Contact PRO-WASH</h2>
@@ -33,9 +36,12 @@ export default function Services() {
                 <li>Saturday - 10am : 4pm</li>
                 <li>Sunday - closed</li>
               </ul>
+              <p>Give us a call, email or fill out the form and we will get back to you as soon as we can.</p>
             </div>
           </div>
+          {/**CONTACT FORM */}
           <div className="col pt-5">
+            <div id="warning"></div>
             <form className="my-5">
               <div className="mb-3">
                 <label htmlFor="customerNameInput" className="form-label">
@@ -100,7 +106,7 @@ export default function Services() {
               </div>
               <div className="form-group mb-3">
                 <label htmlFor="customerProjectDetailsInput">
-                  Project Information
+                  Project Details*
                 </label>
                 <textarea
                   className="form-control"

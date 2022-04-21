@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <div className="container-fluid px-0 position-fixed barnav">
+    <div className="container-fluid px-0 position-fixed bring-to-front">
       <nav className="navbar navbar-expand-lg navbar-light bg-light ">
         <div className="container">
           <Link href="/">
@@ -59,7 +59,6 @@ export default function NavBar() {
                       <a
                         className="dropdown-item"
                         aria-labelledby="navbarDropdown"
-                        
                       >
                         <b>About</b>
                       </a>
@@ -94,13 +93,12 @@ export default function NavBar() {
                   </li>
                 </ul>
               </li>
-              {/* Porfolio 
+              {/* Portfolio */}
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" href="portfolio">
-                  Portfolio
+                <Link href="/portfolio">
+                  <a className="nav-link active">Portfolio</a>
                 </Link>
               </li>
-              */}
               {/* Contact Us */}
               <li className="nav-item">
                 <Link href="/contact">

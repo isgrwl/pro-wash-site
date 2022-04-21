@@ -1,8 +1,21 @@
+/*------------------------------------------------
+Import fonts
+------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@800&family=Open+Sans:wght@400&display=swap");
 
-/*html {
+/*------------------------------------------------
+Variables and default styling
+------------------------------------------------*/
+html {
   scroll-behavior: auto;
-}*/
+}
+
+:root {
+  --color-main-1: rgb(33, 142, 196);
+  --color-main-2: rgb(19, 86, 120);
+  --color-main-3: rgb(40, 126, 201);
+}
+
 html,
 body {
   padding: 0;
@@ -20,6 +33,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/*------------------------------------------------
+Hero banner
+------------------------------------------------*/
 
 header {
   position: relative;
@@ -59,32 +76,77 @@ header .overlay {
   z-index: 1;
 }
 
+/*------------------------------------------------
+Nav Bar
+------------------------------------------------*/
+
 .logo {
   font-family: "Barlow", sans-serif;
-  color: rgb(33, 142, 196);
 }
 
+.bring-to-front {
+  z-index: 10000;
+}
+
+.nav-item {
+  font-family: "Arial";
+  font-family: "Open Sans", sans-serif;
+}
+
+/*------------------------------------------------
+General Styling
+------------------------------------------------*/
 
 .subtitle {
   font-family: "Barlow", sans-serif;
-  color: rgb(19, 86, 120);
+  color: var(--color-main-2);
   font-weight: normal;
   font-size: 50px;
 }
 
+.subtitle-2 {
+  color: white;
+  font-family: "Open Sans";
+  font-weight:bold;
+  font-size:3em;
+}
+
+.subtitle-light {
+  font-family: "Barlow", sans-serif;
+  color: rgb(88, 177, 221);
+  font-weight: normal;
+  font-size: 50px;
+}
+
+.main-text {
+  font-size: 24px;
+}
+
+.light-blue-bg {
+  background-color: rgb(55, 57, 58);
+  color:white;
+}
+
+/*------------------------------------------------
+Button Styling
+------------------------------------------------*/
+
 #c-btn {
   width: 200px;
   color: white;
-  background-color: rgb(33, 142, 196);
+  background-color: var(--color-main-1);
 }
 #c-btn:hover {
   color: white;
   border: solid white 1px;
 }
 
+/*------------------------------------------------
+About Section Styling
+------------------------------------------------*/
 #c-card {
   border: none;
-  background-color: rgb(47, 152, 245);
+  background-color: var(--color-main-1);
   color: white;
   margin: 10px;
 }
@@ -96,45 +158,63 @@ svg {
   stroke: white;
 }
 
-.main-text {
-  font-size: 24px;
-}
-
-.barnav {
-  z-index: 10000;
-}
-
-.nav-item {
-  font-family:"Arial";
-  font-family: "Open Sans", sans-serif;
-}
-
 li {
   list-style-position: inside;
-}
-
-h2 {
-  color: rgb(40, 126, 201);
-  font-size: 40px;
-}
-
-.carousel-item {
-  font-size: 2em;
-}
-
-@media (max-width: 500px) {
-  .carousel-item {
-    font-size: 1.5em;
-  }
-}
-
-.testimonial {
-  height: 300px;
 }
 
 .service-section:before {
   content: "";
   display: block;
   height: 100px;
-  margin: -80px 0 0;
+  margin: -80px 0 0 0;
+}
+
+/*------------------------------------------------
+Carousel Styling (Index)
+------------------------------------------------*/
+
+@media (max-width: 10000px) {
+  .carousel-item {
+    font-size: 2em;
+  }
+
+  .testimonial {
+    height: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .carousel-item {
+    font-size: 1.4em;
+  }
+
+  .testimonial {
+    height: 200px;
+  }
+}
+
+/*------------------------------------------------
+Carousel Styling (Index)
+------------------------------------------------*/
+
+.learn-more-background {
+  background-image: url("../public/images/img (5).jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 50vh;
+}
+
+.learn-more-inner {
+  background-color: rgba(0,0,0,0.6);
+  padding:8%;
+
+}
+
+/*------------------------------------------------
+Testimonials Styssling
+------------------------------------------------*/
+.testimonials-inner {
+  background-color: rgb(225, 255, 225);
+  padding:5%;
+  color: black;
 }
