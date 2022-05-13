@@ -71,7 +71,7 @@ export default function Home() {
               We offer Pressure washing services such as surface cleaning and
               graffiti removal, as well as interlock restoration services, such
               as polymeric sand reinstatement, interlock relaying, and interlock
-              cleaning. To learn more, view our services page.
+              cleaning.
             </p>
             <Link href="/services">
               <a>
@@ -98,7 +98,7 @@ export default function Home() {
                 id="carouselExampleIndicators"
                 className="carousel slide text-center pt-5"
                 data-bs-ride="carousel"
-                data-bs-interval="8000"
+                data-bs-interval="5000"
               >
                 <div className="carousel-inner h-100">
                   <div className="carousel-item active">

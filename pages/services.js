@@ -12,7 +12,7 @@ export default function Services() {
           name="description"
           content="PRO-WASH Ottawa pressure washing service"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <NavBar></NavBar>
       <div className="container pt-5">

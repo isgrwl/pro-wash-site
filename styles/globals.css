@@ -211,10 +211,18 @@ Carousel Styling (Index)
 }
 
 /*------------------------------------------------
-Testimonials Styssling
+Testimonials Styling
 ------------------------------------------------*/
 .testimonials-inner {
   background-color: rgb(225, 255, 225);
   padding:5%;
   color: black;
+}
+
+/*------------------------------------------------
+Gallery Styling
+------------------------------------------------*/
+
+.gallery-img-container {
+  height:30vh;
 }

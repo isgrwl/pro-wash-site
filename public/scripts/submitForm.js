@@ -1,6 +1,6 @@
 var submitButton = document.querySelector('[type="submit"]');
 
-submitButton.addEventListener("click", (e) => {
+submitButton.addEventListener("click", async (e) => {
   e.preventDefault();
 
   //collect input
@@ -26,10 +26,27 @@ submitButton.addEventListener("click", (e) => {
   } else {
     warningBox.className = "";
     warningBox.innerHTML = "";
+
+    let data = {};
+    inputs.forEach((input) => {
+      data[input.id] = input.value;
+    });
+
+    const response = await postData("/api/handleForm", data);
+    console.log(response);
   }
 
-  let data = {};
-  inputs.forEach((input) => {
-    data[input.id] = input.value;
-  });
+  async function postData(url, data) {
+    const response = await fetch(url, {
+      method: "POST",
+      mode: "cors",
+      cache: "no-cache",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    return response.json();
+  }
 });

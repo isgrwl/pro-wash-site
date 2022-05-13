@@ -12,7 +12,7 @@ export default function Services() {
           name="description"
           content="PRO-WASH Ottawa pressure washing service"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <NavBar></NavBar>
       {/* About Us */}
@@ -20,7 +20,7 @@ export default function Services() {
       <div className="container pt-5">
         <div className="pt-5 col-md-8">
           <h1 className="subtitle">Who Are We?</h1>
-          <p>
+          <p className="main-text">
             Pro-Wash provides top-notch exterior surface cleaning services in
             the Ottawa area. We use state of the art equipment and the highest
             quality materials to leave our clients with the best possible
@@ -31,7 +31,7 @@ export default function Services() {
         {/* Our Principles*/}
         <div className="row col-8-md mt-5">
           <h1 className="subtitle">Our Principles</h1>
-          <p>
+          <p className="main-text">
             At PRO-WASH we serve each client with the same set of principles to
             ensure a quality customer experience from start to finish.
           </p>
@@ -152,30 +152,38 @@ export default function Services() {
         <ul className="list-group d-inline-block my-3">
           <li className="list-group-item">
             <h3>Step 1: Initial Inquiry</h3>
-            <p>We gain knowledge of what you like to have done.</p>
+            <p className="main-text">
+              We gain knowledge of what you like to have done.
+            </p>
           </li>
           <li className="list-group-item">
             <h3>Step 2: Project Information Review</h3>
-            <p>All project details are reviewed.</p>
+            <p className="main-text"> All project details are reviewed.</p>
           </li>
           <li className="list-group-item">
             <h3>Step 3: Quote Proposal</h3>
-            <p>Our proposal is sent to you with a detailed scope of work.</p>
+            <p className="main-text">
+              Our proposal is sent to you with a detailed scope of work.
+            </p>
           </li>
           <li className="list-group-item">
             <h3>Step 4: Client Approval</h3>
-            <p>
+            <p className="main-text">
               You would like to have the project complete. Contract is signed by
               both parties.
             </p>
           </li>
           <li className="list-group-item">
             <h3>Step 5: Scheduling</h3>
-            <p>Book a time that works for both parties.</p>
+            <p className="main-text">
+              Book a time that works for both parties.
+            </p>
           </li>
           <li className="list-group-item">
             <h3>Complete Project</h3>
-            <p>Project is completed and ready for you to enjoy!</p>
+            <p className="main-text">
+              Project is completed and ready for you to enjoy!
+            </p>
           </li>
         </ul>
       </div>
